@@ -666,6 +666,39 @@
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.16-1.507-.465-2.448-1.918-2.448-3.085 0-3.462 2.51-6.641 7.228-6.641 3.793 0 6.742 2.714 6.742 6.34 0 3.78-2.386 6.82-5.701 6.82-1.114 0-2.166-.615-2.522-1.344l-.686 2.632c-.248.961-.919 2.164-1.367 2.898-.485.221-1.017.409-1.566.409-.546 0-1.073-.188-1.566-.409C4.671 21.404 1.513 17.066 1.513 11.987 1.513 6.367 6.88 1 13.501 1c6.62 0 11.987 5.367 11.987 11.987C25.488 18.633 20.121 24 13.501 24c-.546 0-1.081-.188-1.566-.409-.448-.734-1.119-1.937-1.367-2.898l-.686-2.632c-.356.729-1.408 1.344-2.522 1.344-3.315 0-5.701-3.04-5.701-6.82 0-3.626 2.949-6.34 6.742-6.34 4.718 0 7.228 3.179 7.228 6.641 0 1.167-.941 2.62-2.448 3.085-.23.111-.349.065-.402-.16-.041-.164-.244-.988-.334-1.363-.027-.12-.014-.225.085-.345.495-.598.889-1.708.889-2.741 0-2.637-1.999-5.199-5.409-5.199z'/%3E%3C/svg%3E");
         }
 
+        /* Footer */
+.footer {
+    background: var(--bg-secondary);
+    padding: 2rem 2rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-copyright {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+[data-theme="dark"] .footer {
+    background: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+}
+
         @media (max-width: 768px) {
             .contact-row {
                 grid-template-columns: 1fr;
@@ -674,6 +707,18 @@
             .contact-container {
                 padding: 2rem 1.5rem;
             }
+
+            .footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.9rem;
+    }
+
+    .footer-tagline {
+        font-size: 0.8rem;
+    }
         }
 
         /* Empty state for projects */
@@ -1093,6 +1138,13 @@
                 </div>
             </div>
         </section>
+         <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-copyright">© 2025 NOELLA-MARTHA NYATO. All rights reserved.</p>
+                <p class="footer-tagline">Creative Precision. High-Caliber Adventures. Contemporary Vibe.</p>
+            </div>
+        </footer>
     </main>
 
     <script>
